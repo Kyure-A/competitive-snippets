@@ -1,6 +1,9 @@
+#include <bits/stdc++.h>
+
 namespace kyre
 {
-  template<class T> struct Mex(set<int> st)
+  using namespace std;
+  int Mex(set<int> st)
   {
     int st_max = *st.rbegin();
 

@@ -1,5 +1,9 @@
+#include <bits/stdc++.h>
+
 namespace kyre
 {
+  using namespace std;
+  
   class UnionFind
   {
   public:
