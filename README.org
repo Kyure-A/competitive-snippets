@@ -2,8 +2,8 @@
 #+AUTHOR: Kyure_A
 #+OPTIONS: toc:nil
 
-[[https://badgen.org/img/atcoder/kyre/rating/algorithm?style=plastic][https://atcoder.jp/users/kyre?contestType=algo
-]]
+[[https://atcoder.jp/users/kyre?contestType=algo][https://badgen.org/img/atcoder/kyre/rating/algorithm?style=plastic]]
+
 ** これはなんですか
 
 競技プログラミング（主に AtCoder）用の Snippets / Library です。
