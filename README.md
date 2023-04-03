@@ -1,15 +1,12 @@
-#+TITLE: competitive-snippets
-#+AUTHOR: Kyure_A
-#+OPTIONS: toc:nil
+# competitive-snippets
 
-#+begin_src markdown
 [![Rating](https://badgen.org/img/atcoder/kyre/rating/algorithm?style=plastic)](https://atcoder.jp/users/kyre?contestType=algo)
-#+end_src
-** これはなんですか
+
+## これはなんですか
 
 競技プログラミング（主に AtCoder）用の Snippets / Library です。
 
-** なにがありますか
+## なにがありますか
 
 - Mex
 - Unionfind (Disjoint Set Union)
