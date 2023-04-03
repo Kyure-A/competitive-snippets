@@ -2,8 +2,9 @@
 #+AUTHOR: Kyure_A
 #+OPTIONS: toc:nil
 
-[[https://atcoder.jp/users/kyre?contestType=algo][https://badgen.org/img/atcoder/kyre/rating/algorithm?style=plastic]]
-
+#+begin_src markdown
+[![Rating](https://badgen.org/img/atcoder/kyre/rating/algorithm?style=plastic)](https://atcoder.jp/users/kyre?contestType=algo)
+#+end_src
 ** これはなんですか
 
 競技プログラミング（主に AtCoder）用の Snippets / Library です。
