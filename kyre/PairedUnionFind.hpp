@@ -40,11 +40,18 @@ namespace kyre
       pair<int, int> ry = root(y);
  
       if (rx == ry) return false;
-      else if (set_size[rx] < set_size[ry]) swap(rx, ry);
+
       // Operations
-      parent[ry] = rx;
-      set_size[rx] += set_size[ry];
-      return true;
+      else if (set_size[rx] < set_size[ry])
+	{
+	  parent[rx] = ry;
+	  set_size[ry] += set_size[rx];
+	}
+      else
+	{
+	  parent[ry] = rx;
+	  set_size[rx] += set_size[ry];
+	}
     }
  
     bool same (pair<int, int> x, pair<int, int> y)
