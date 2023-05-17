@@ -7,22 +7,22 @@ namespace kyre
   class UnionFind
   {
   public:
-    vector<long long> parent;
-    vector<long long> set_size;
+    vector<int> parent;
+    vector<int> set_size;
 
     // constructor
-    UnionFind (long long n): parent(n), set_size(n, 1LL)
+    UnionFind (int n): parent(n), set_size(n, 1LL)
     {
-      for (long long i = 0; i < n; ++i) parent[i] = i;
+      for (int i = 0; i < n; ++i) parent[i] = i;
     }
-    void init(long long n)
+    void init(int n)
     {
       parent.resize(n);
       set_size.assign(n, 1LL);
-      for (long long i = 0; i < n; ++i) parent[i] = i; 
+      for (int i = 0; i < n; ++i) parent[i] = i; 
     }
 
-    long long root (long long x) // find (path halving)
+    int root (int x) // find (path halving)
     {
       while (parent[x] != x)
 	{
@@ -33,10 +33,10 @@ namespace kyre
       return x;
     }
 
-    bool merge (long long x, long long y) // union by size
+    bool merge (int x, int y) // union by size
     {
-      long long rx = root(x);
-      long long ry = root(y);
+      int rx = root(x);
+      int ry = root(y);
 
       if (rx == ry) return false;
 
@@ -51,14 +51,16 @@ namespace kyre
 	  parent[ry] = rx;
 	  set_size[rx] += set_size[ry];
 	}
+
+      return true;
     }
 
-    bool same (long long x, long long y)
+    bool same (int x, int y)
     {
       return root(x) == root(y);
     }
 
-    long long size(long long x)
+    int size (int x)
     {
       return set_size[root(x)];
     }
