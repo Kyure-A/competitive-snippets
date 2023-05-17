@@ -12,4 +12,4 @@
 - Unionfind (Disjoint Set Union)
 - Topological Sort
 
-があります。ふえていきます。
+があります。
