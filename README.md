@@ -15,4 +15,4 @@
 - Unionfind (Disjoint Set Union)
 - Topological Sort
 
-があります。
+があります。適宜追加します
