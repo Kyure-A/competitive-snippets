@@ -12,7 +12,6 @@ signed main ()
   while (q--)
     {
       int t, u, v; cin >> t >> u >> v;
-      u--; v--;
 
       if (t == 0)
 	{
