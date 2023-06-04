@@ -5,11 +5,11 @@
 [![GitHub Pages](https://img.shields.io/static/v1?label=GitHub+Pages&message=+&color=brightgreen&logo=github&style=flat)](https://kyure-a.github.io/competitive-snippets/)
 
 
-## What is this?
+## これはなんですか
 
-Snippets / Library for Competitive programming (mainly AtCoder).
+競技プログラミング（主に AtCoder）用の Snippets / Library です。
 
-## What functions does this repository have?
+## なにがありますか
 
 - Mex
 - Euclidean Distance
@@ -18,4 +18,4 @@ Snippets / Library for Competitive programming (mainly AtCoder).
 - Unionfind (Disjoint Set Union)
 - Topological Sort
 
-These exist in this repository. More will be added periodically.
+があります。適宜追加します
