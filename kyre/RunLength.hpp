@@ -20,8 +20,8 @@ namespace kyre
       for (int left = 0; left < (int) str.size();)
 	{
 	  int right = left + 1;
-	  for (; right < (int) str.size() and str[left] == str[right]; r++) {};
-	  encoded.emplace_back({str[left], right - left});
+	  for (; right < (int) str.size() and str[left] == str[right]; right++) {};
+	  encoded.push_back({str[left], right - left});
 	  left = right;
 	  index[str[left]].emplace_back(count);
 	  count++;

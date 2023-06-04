@@ -12,6 +12,9 @@
 ## なにがありますか
 
 - Mex
+- Euclidean Distance
+- stack DFS (Depth-First Search) 
+- BFS (Breadth-First Search)
 - Unionfind (Disjoint Set Union)
 - Topological Sort
 
