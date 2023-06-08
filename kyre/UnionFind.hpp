@@ -33,10 +33,10 @@ namespace kyre
       return x;
     }
 
-    bool merge (int x, int y) // union by size
+    bool merge (const int x, const int y) // union by size
     {
-      int rx = root(x);
-      int ry = root(y);
+      const int rx = root(x);
+      const int ry = root(y);
 
       if (rx == ry) return false;
 
@@ -55,12 +55,12 @@ namespace kyre
       return true;
     }
 
-    bool same (int x, int y)
+    bool same (const int x, const int y)
     {
       return root(x) == root(y);
     }
 
-    int size (int x)
+    int size (const int x)
     {
       return set_size[root(x)];
     }

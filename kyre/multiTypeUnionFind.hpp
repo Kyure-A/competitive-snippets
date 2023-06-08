@@ -4,8 +4,10 @@ namespace kyre
 {
   using namespace std;
   
-  template <typename T> struct UnionFind
+  template <typename T>
+  class UnionFind
   {
+  public:
     vector<T> coordinates; // 素集合を要素として管理
     vector<int> parent;
     vector<int> set_size;
@@ -42,8 +44,8 @@ namespace kyre
  
     bool merge (const T &x, const T &y)
     {
-      int rx = root(x);
-      int ry = root(y);
+      const int rx = root(x);
+      const int ry = root(y);
     
       if (rx == ry) return false;
     
