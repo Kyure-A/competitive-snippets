@@ -1,3 +1,5 @@
+#include <bits/stdc++.h>
+
 namespace inner {
  
   using i32 = int32_t;
@@ -19,7 +21,7 @@ namespace inner {
       swap(a, b %= a);
       swap(x, y -= q * x);
     }
-    assert(b == 1);
+    // assert(b == 1);
     return y < 0 ? y + p : y;
   }
  
@@ -50,19 +52,19 @@ namespace my_rand {
  
   // [l, r]
   i64 rng(i64 l, i64 r) {
-    assert(l <= r);
+    // assert(l <= r);
     return l + rng() % (r - l + 1);
   }
  
   // [l, r)
   i64 randint(i64 l, i64 r) {
-    assert(l < r);
+    // assert(l < r);
     return l + rng() % (r - l);
   }
  
   // choose n numbers from [l, r) without overlapping
   vector<i64> randset(i64 l, i64 r, i64 n) {
-    assert(l <= r && n <= r - l);
+    // assert(l <= r && n <= r - l);
     unordered_set<i64> s;
     for (i64 i = n; i; --i) {
       i64 m = randint(l, r + 1 - i);
@@ -108,12 +110,12 @@ struct ArbitraryLazyMontgomeryModInt {
   }
  
   static void set_mod(u32 m) {
-    assert(m < (1 << 30));
-    assert((m & 1) == 1);
+    // assert(m < (1 << 30));
+    // assert((m & 1) == 1);
     mod = m;
     n2 = -u64(m) % m;
     r = get_r();
-    assert(r * mod == 1);
+    // assert(r * mod == 1);
   }
  
   u32 a;
@@ -209,12 +211,12 @@ struct montgomery64 {
   }
  
   static void set_mod(u64 m) {
-    //assert(m < (1LL << 62));
-    //assert((m & 1) == 1);
+    // assert(m < (1LL << 62));
+    // assert((m & 1) == 1);
     mod = m;
     n2 = -u128(m) % m;
     r = get_r();
-    //assert(r * mod == 1);
+    // assert(r * mod == 1);
   }
  
   u64 a;

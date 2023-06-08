@@ -18,6 +18,7 @@ namespace kyre
   vector<long long> Dijkstra(const Graph& graph, int start)
   {
     constexpr long long INF = (1LL << 60);
+    
     vector<long long> distances(graph.size(), INF);
     
     priority_queue<Pair, vector<Pair>, greater<Pair>> que;
