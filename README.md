@@ -15,7 +15,9 @@ Snippets / Library for Competitive programming (mainly AtCoder).
 - Euclidean Distance
 - stack DFS (Depth-First Search) 
 - BFS (Breadth-First Search)
+- Dijkstra's Algorithm
 - Unionfind (Disjoint Set Union)
+  -There are three types: one that can manage disjoint set of int, one that can manage disjoint set of pair<int, int> (using map, which is slow and impractical), and one that can manage disjoint set of type T.
 - Topological Sort
 
 These exist in this repository. More will be added periodically.

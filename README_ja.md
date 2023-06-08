@@ -15,7 +15,11 @@
 - Euclidean Distance
 - stack DFS (Depth-First Search) 
 - BFS (Breadth-First Search)
+- Dijkstra's Algorithm
 - Unionfind (Disjoint Set Union)
+  1. int 型の素集合を管理できる class
+  1. pair<int, int> 型の素集合を管理できる class（内部で map を使用しているので計算量がかさんで実用的でない）
+  1. 任意の型 T の素集合を管理できる class
 - Topological Sort
 
 があります。適宜追加します
